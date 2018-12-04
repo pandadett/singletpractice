@@ -1,0 +1,19 @@
+
+fn = "oak/stanford/groups/quake/nuttadap/sequencing_data/mapped/DENV_VEEV_from_FZ/counts_group_1.tsv"
+import pandas as pd #import pandas
+pd.read_csv(fn, sep="\t") #import tsv through panda data frame
+pd.read_csv(fn, sep="\t", index_col=0) #assign the first column as index
+pd.read_csv(fn, sep="\t", index_col=0).index
+pd.read_csv(fn, sep="\t", index_col=0)
+counts = pd.read_csv(fn, sep="\t", index_col=0)s
+hist #type out all history
+
+total_gene = counts.sum(axis=1)
+total_gene
+total_gene = counts.sum(axis=1)
+total_gene.tocsv?
+total_gene.to_csv?
+total_gene.to_csv('total_gene.tsv', sep ='\t')
+counts.to_csv('counts.tsv', sep ='t')
+hist
+
